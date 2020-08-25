@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: hsl(229, 57%, 11%);
+}
+
+.main {
+    height: 100vh;
+    background: url('./images/bg-desktop.png') bottom no-repeat;
+}
