@@ -18,6 +18,9 @@ body {
 
 .content {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 8%;
 }
 
 .content-main {
@@ -30,6 +33,7 @@ body {
     padding: 30px;
     border-radius: 10px;
     border-top-right-radius: 100px;
+    margin-right: 50px;
 }
 
 .content-main-icons {
@@ -60,6 +64,11 @@ body {
     border-radius: 10px;
     font-size: 14px;
     font-weight: 400;
+    position: relative;
+}
+
+.numbers {
+    font-weight: 700;
 }
 
 .progress-bar {
@@ -75,9 +84,39 @@ body {
     width: 75%;
     background-image: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
     border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.progress-bar-fill-mark {
+    width: 13px;
+    height: 13px;
+    background-color: white;
+    margin-right: 2px;
+    border-radius: 50%;
 }
 
 .progress-bar-range {
     display: flex;
     justify-content: space-between;
+}
+
+.popover {
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    background-color: white;
+    top: -12%;
+    right: 7%;
+}
+
+.popover-detail {
+    color: gray;
+    font-weight: 900;
+}
+
+.popover-number {
+    font-size: 40px;
+    color: black;
 }
