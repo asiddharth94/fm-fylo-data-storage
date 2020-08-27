@@ -107,8 +107,13 @@ body {
     width: 150px;
     height: 50px;
     background-color: white;
-    top: -12%;
+    top: -15%;
     right: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border-bottom-right-radius: 0;
 }
 
 .popover-detail {
@@ -119,4 +124,48 @@ body {
 .popover-number {
     font-size: 40px;
     color: black;
+}
+
+.popover-triangle {
+    width: 0; 
+    height: 0; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;    
+    border-right: 20px solid white; 
+    position: absolute;
+    right: 0;
+    bottom: -20px;
+}
+
+@media screen and (max-width: 375px) {
+
+    .main {
+        background: url('./images/bg-mobile.png') bottom no-repeat;
+    }
+
+    .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+    }
+
+    .content-main {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .content-progress {
+        width: 100%;
+    }
+
+    .popover {
+        border-bottom-right-radius: 10px;
+        top: 83%;
+        right: 25%;
+    }
+
+    .popover-triangle {
+        display: none;
+    }
 }
